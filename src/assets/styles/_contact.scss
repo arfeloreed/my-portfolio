@@ -1,0 +1,39 @@
+/*
+CONTACT
+*/
+
+#contact .socials {
+  a {
+    font-size: 35px;
+    text-decoration: none;
+    margin: 0 15px;
+    color: #4e4e4e;
+    transition: all 0.3s ease;
+
+    svg {
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      color: #0d6efd;
+
+      svg {
+        transform: translateY(-10px);
+      }
+    }
+  }
+}
+
+.footer-paralax {
+  padding: 4rem 0 0 0;
+}
+
+/*
+FOOTER
+*/
+
+footer {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 3rem;
+}

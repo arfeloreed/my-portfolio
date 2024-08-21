@@ -1,0 +1,112 @@
+#about>div.position-relative {
+  height: 550px
+}
+
+#about .stage-cube-con {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  overflow: hidden;
+  padding-top: 14%;
+
+  .cubespinner {
+    animation-name: spinCube;
+    animation-timing-function: ease-in-out;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    margin-left: calc(50% - 100px);
+
+    div {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+      font-size: 150px;
+      background: rgba(255, 255, 255, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px 0 lightyellow;
+    }
+
+    .face1 {
+      transform: translateZ(100px);
+    }
+
+    .face2 {
+      transform: rotateY(90deg) translateZ(100px);
+    }
+
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+    }
+
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+    }
+
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+    }
+
+    .face6 {
+      transform: rotateX(-90deg) translateZ(100px);
+    }
+  }
+}
+
+@keyframes spinCube {
+
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  16% {
+    transform: rotateY(-90deg);
+  }
+
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+
+  66% {
+    transform: rotateY(-270deg) rotateZ(90deg);
+  }
+
+  83% {
+    transform: rotateX(90deg);
+  }
+}
+
+#about .polaroid {
+  span {
+    background: #ffffff;
+    display: inline-block;
+    padding: 15px 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+    z-index: 0;
+    position: relative;
+  }
+}
+
+@media (max-width: 576px) {
+  #about>div.container.position-relative {
+    height: 410px;
+  }
+}
