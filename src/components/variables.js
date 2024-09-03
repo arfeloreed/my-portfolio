@@ -15,8 +15,8 @@ import passGen from "../assets/images/passGen.webp";
 import crypto from "../assets/images/crypto-app.webp";
 import notes from "../assets/images/booknotes.webp";
 import keeper from "../assets/images/keeper.webp";
-import blog1 from "../assets/images/blog-django.webp";
 import blog2 from "../assets/images/blog-flask.webp";
+import nike from "../assets/images/nike1.webp";
 
 // for navbar
 const sectionIds = ["home", "about", "skills", "work", "contact"];
@@ -77,10 +77,10 @@ const projects = [
     link: "https://keeper-ol3w.onrender.com/",
   },
   {
-    img: blog1,
-    name: "Blog Web App",
-    desc: "Made with Django and Jinja templating",
-    link: "https://arfeloreed.pythonanywhere.com/",
+    img: nike,
+    name: "Nike Landing Page",
+    desc: "Made with React and Tailwindcss",
+    link: "https://nikereed.netlify.app/",
   },
   {
     img: blog2,
