@@ -11,12 +11,12 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 // assets
-import passGen from "../assets/images/passGen.webp";
-import crypto from "../assets/images/crypto-app.webp";
-import notes from "../assets/images/booknotes.webp";
-import keeper from "../assets/images/keeper.webp";
-import blog2 from "../assets/images/blog-flask.webp";
+import iphone from "../assets/images/iphone1.webp";
+import brainwave from "../assets/images/brainwave.webp";
 import nike from "../assets/images/nike1.webp";
+import passGen from "../assets/images/passGen.webp";
+import crypto from "../assets/images/crypto.webp";
+import notes from "../assets/images/booknotes.webp";
 
 // for navbar
 const sectionIds = ["home", "about", "skills", "work", "contact"];
@@ -53,6 +53,24 @@ const skills = [
 // work section
 const projects = [
   {
+    img: iphone,
+    name: "Iphone Landing Page",
+    desc: "Made with React-TS and Tailwindcss",
+    link: "https://reediphone.netlify.app",
+  },
+  {
+    img: brainwave,
+    name: "Brainwave Landing Page",
+    desc: "Made with React-TS and Tailwindcss",
+    link: "https://aisupremacy.netlify.app",
+  },
+  {
+    img: nike,
+    name: "Nike Landing Page",
+    desc: "Made with React and Tailwindcss",
+    link: "https://nikereed.netlify.app/",
+  },
+  {
     img: passGen,
     name: "Password Generator",
     desc: "Made with React, NodeJs and PostgreSQL",
@@ -69,24 +87,6 @@ const projects = [
     name: "Booknotes",
     desc: "Made with React, NodeJs and PostgreSQL",
     link: "https://reednotes.netlify.app/",
-  },
-  {
-    img: keeper,
-    name: "Keeper",
-    desc: "Made with React, NodeJs and PostgreSQL",
-    link: "https://keeper-ol3w.onrender.com/",
-  },
-  {
-    img: nike,
-    name: "Nike Landing Page",
-    desc: "Made with React and Tailwindcss",
-    link: "https://nikereed.netlify.app/",
-  },
-  {
-    img: blog2,
-    name: "Blog Web App",
-    desc: "Made with Flask and Jinja templating",
-    link: "https://reedtorz.pythonanywhere.com/",
   },
 ];
 
